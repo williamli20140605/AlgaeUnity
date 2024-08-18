@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GlobalReferences.cs" />
+    <Compile Include="Assets\Scripts\CameraAspectRatio.cs" />
     <Compile Include="Assets\Scripts\IntroTextScroll.cs" />
     <Compile Include="Assets\Scripts\StartManager.cs" />
     <Compile Include="Assets\Scripts\BossMovement.cs" />
@@ -72,7 +73,6 @@
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
-    <Compile Include="Assets\CameraAspectRatio.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\CheatManager.cs" />
     <Compile Include="Assets\Scripts\RulesManager.cs" />

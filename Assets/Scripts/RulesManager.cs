@@ -66,10 +66,9 @@ public class RulesManager : MonoBehaviour
         backButton.gameObject.SetActive(false);
         leftButton.gameObject.SetActive(false);
         rightButton.gameObject.SetActive(false);
+        GameObject.Find("StartManager").GetComponent<StartManager>().isShowingRules = false;
 
         UpdateRuleDisplay();
-
-
     }
 
     public void OnRulesButtonClick()
@@ -82,6 +81,7 @@ public class RulesManager : MonoBehaviour
                 canvas.gameObject.SetActive(true);
             }
         }
+        GameObject.Find("StartManager").GetComponent<StartManager>().isShowingRules = true;
         backButton.gameObject.SetActive(true);
         leftButton.gameObject.SetActive(true);
         rightButton.gameObject.SetActive(true);

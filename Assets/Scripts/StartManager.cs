@@ -10,6 +10,13 @@ public class StartManager : MonoBehaviour
     public Canvas phase1;
     public Canvas phase2;
     public Canvas phase3;
+
+    internal bool isShowingRules = false;
+
+    public Button pauseButton; // Reference to the pause button
+    public Sprite pauseImage;  // Sprite for the pause image
+    public Sprite resumeImage; // Sprite for the resume image
+
     private CheatManager cheatManager;
 
     public enum Phases
@@ -138,23 +145,27 @@ public class StartManager : MonoBehaviour
         }
     }
 
-    private void ToggleGameMenu()
-    {
-        if (HomePageEnabled)
+        public void ToggleGameMenu()
         {
-            return;
+            // Check if the game is over and return early if it is
+            if (GameOverLose.enabled || GameOverWin.enabled || isShowingPhases || isShowingRules || HomePageEnabled)
+            {
+                return; // Prevent any further action if the game is over
+            }
+
+            if (isStarted)
+            {
+                isStarted = false;
+                GameMenu.enabled = true;
+                pauseButton.image.sprite = resumeImage; // Set button to show resume image
+            }
+            else
+            {
+                isStarted = true;
+                GameMenu.enabled = false;
+                pauseButton.image.sprite = pauseImage; // Set button to show pause image
+            }
         }
-        if (isStarted && GameOverLose.enabled == false && GameOverWin.enabled == false)
-        {
-            isStarted = false;
-            GameMenu.enabled = true;
-        }
-        else if (isStarted == false && GameOverLose.enabled == false && GameOverWin.enabled == false)
-        {
-            isStarted = true;
-            GameMenu.enabled = false;
-        }
-    }
 
     public void OnStartButtonClick()
     {

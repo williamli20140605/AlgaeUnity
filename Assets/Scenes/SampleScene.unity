@@ -804,17 +804,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "         Since the beginning of human\r\n        plastic production, a
+  m_text: "        Since the beginning of human\r\n        plastic production, a
     little demon\r\n        called microplastic has gradually\r\n        appeared
     in the ocean. Cyanobacteria\r\n        are organisms that consume these\r\n       
     microplastics; the microplastics enter\r\n        our bodies, affecting our health.\r\n       
     However, with the advancement of\r\n        human technology, our BASIS-China\r\n       
-    team has discovered a method to\r\n        degrade microplastics in the ocean.\r\n       
-    We will implant plastic-degrading\r\n        enzymes into cyanobacteria, allowing\r\n       
-    them to break down microplastics in\r\n        the ocean. This way, the amount
-    of\r\n        microplastics in the ocean is decreasing\r\n        more and more!!\r\n\n       
-    Your Goal of this game is to defeate the\n        boss and don't LOSE.\n\n       
-    Click to continue . . ."
+    IGEM team has discovered a method to\r\n        degrade microplastics in the
+    ocean.\r\n        We will implant plastic-degrading\r\n        enzymes into cyanobacteria,
+    allowing\r\n        them to break down microplastics in\r\n        the ocean.
+    This way, the amount of\r\n        microplastics in the ocean is decreasing\r\n       
+    more and more!!\r\n\n        Your Goal of this game is to defeate the\n       
+    boss and don't LOSE.\n\n        Click to continue . . ."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2724,6 +2724,9 @@ MonoBehaviour:
   phase1: {fileID: 686664114}
   phase2: {fileID: 714624829}
   phase3: {fileID: 1712083670}
+  pauseButton: {fileID: 1330002988}
+  pauseImage: {fileID: 21300000, guid: ecf449a3c574daf48bb271af04449700, type: 3}
+  resumeImage: {fileID: 21300000, guid: 8972a4539e4f0d74ba171138d1793383, type: 3}
   phase: 0
   lastPhase: 0
   isShowingPhases: 0
